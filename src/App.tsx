@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import { Footer } from "./components/footer/footer";
 import { MainPage } from "./pages";
 import { CityMap } from "./components/cityMap/cityMap";
+import { CityList } from "./components/cityList/cityList";
 
 function App() {
   const TITLE = {
@@ -17,10 +18,10 @@ function App() {
       name: "Города",
       link: "/cities",
     },
-    {
-      name: "О задании",
-      link: "/about",
-    },
+    // {
+    //   name: "О задании",
+    //   link: "/about",
+    // },
   ];
 
   return (
@@ -29,6 +30,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/city/:id" element={<CityMap />} />
+        <Route path="/cities" element={<CityList />} />
       </Routes>
       <Footer />
     </>

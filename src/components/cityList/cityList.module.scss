@@ -1,0 +1,19 @@
+.content {
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.card {
+  width: 314px;
+  height: 150px;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: left;
+}

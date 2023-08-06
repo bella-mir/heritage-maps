@@ -30,7 +30,7 @@ export const MapBox = () => {
         {cities.features.map((d) => (
           <>
             <path
-              key={d.properties.City}
+              key={`${d.properties.City}-${d.properties.id}`}
               d={path(d)}
               fill="#939598"
               stroke="#E6E7E8"
@@ -58,14 +58,10 @@ export const MapBox = () => {
               x={path.centroid(d)[0] + 10}
               y={path.centroid(d)[1] + 5}
               font-size="16"
+              className={styles.link}
+              onClick={() => navigate(`/city/${d.properties.id}`)}
             >
-              <Link
-                to={d.properties.lllll}
-                target="_blank"
-                className={styles.link}
-              >
-                {d.properties.City}
-              </Link>
+              {d.properties.City}
             </text>
           </>
         ))}

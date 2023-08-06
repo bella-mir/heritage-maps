@@ -2,12 +2,9 @@ import { Link } from "react-router-dom";
 import { Container } from "../../components";
 import { Button } from "antd";
 import styles from "./main-page.module.scss";
-import useWindowSize from "../../hooks/useWindowSize";
 import { MapBox } from "../../components/mapBox";
 
 export const MainPage = () => {
-  const size = useWindowSize();
-
   return (
     <Container>
       <div className={styles.main}>
@@ -30,17 +27,14 @@ export const MainPage = () => {
             <div className={styles.row}>
               <Link to="/cities">
                 <Button type="primary" size="large">
-                  Подробнее
+                  Города
                 </Button>
               </Link>
               {/* <Link to="/map">
-            <p>Карта &rarr;</p>
+            <p>Подробнее &rarr;</p>
           </Link> */}
             </div>
           </div>
-          {size.width && size.width < 680 && (
-            <img className={styles.image}></img>
-          )}
         </div>
         <div className={styles.mapbox}>
           <MapBox />
