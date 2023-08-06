@@ -1,0 +1,13 @@
+.container {
+  padding: 5rem 2rem;
+  box-sizing: border-box;
+  overflow: auto;
+  align-items: top;
+  background-color: #fafafa;
+  height: 100vh;
+  width: calc(100vw - 8px);
+  .inside {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}
