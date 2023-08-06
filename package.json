@@ -1,9 +1,8 @@
 {
   "name": "heritage-maps",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://bella-mir.github.io/heritage-maps",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -16,6 +15,7 @@
     "@types/d3": "^7.4.0",
     "@types/d3-geo": "^3.0.3",
     "@types/d3-selection": "^3.0.5",
+    "@types/node": "^20.4.8",
     "antd": "^5.8.1",
     "classnames": "^2.3.2",
     "d3": "^7.8.5",
