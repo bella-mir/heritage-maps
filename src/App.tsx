@@ -18,10 +18,6 @@ function App() {
       name: "Города",
       link: "/cities",
     },
-    // {
-    //   name: "О задании",
-    //   link: "/about",
-    // },
   ];
 
   return (
